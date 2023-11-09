@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    font-family: Comic Sans MS;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+.logo {
+    background-color: #7743DB;
+    padding: 80px;
+    text-align: center;
+    color: #FFFBF5;
+}
+
+nav {
+    background-color: #e0e0e0;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    border: none;
+    color: #000;
+}
+
+nav ul li a:hover {
+    transition: 0.2s;
+    background-color: #7743DB;
+    color: #FFFBF5;
+}
+
+input {
+    outline: none;
+    padding: 5px;
+}
+
+main {
+    margin: 20px;
+    display: flex;
+}
+
+section {
+    flex: 3;
+    margin-right: 20px;
+}
+
+article {
+    padding: 10px;
+    background-color: #e0e0e0;
+    color: #000;
+    border: 1px solid #7743DB;
+    border-radius: 10px;
+}
+
+article:nth-child(2n) {
+    margin: 20px 0;
+}
+
+aside {
+    flex: 1;
+}
+
+footer {
+    padding: 50px;
+    text-align: center;
+    background-color: #7743DB;
+    color: #FFFBF5;
+}
+
+
+/* Left Bar Style */
+.leftbar {
+    background-color: #e0e0e0;
+    margin-bottom: 20px;
+}
+
+.leftbar h3 {
+    padding: 10px;
+    border-bottom: 1px solid #000;
+}
+
+.leftbar ul {
+    margin: 0;
+    padding: 0;
+}
+
+.leftbar ul li {
+    list-style: none;
+}
+
+.leftbar ul li a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+/* Mobile Device */
+@media(max-width: 768px) {
+    main {
+        display: block;
+    }
+
+    section {
+        margin-right: 0;
+    }
+
+    aside {
+        margin-top: 20px;
+    }
+}
